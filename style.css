@@ -1,0 +1,231 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      
+    }
+
+    nav {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: #ffcc00;
+    }
+
+    .hamburger,
+    .close-btn {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      font-size: 28px;
+      color: white;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+        padding-top: 80px;
+        transition: right 0.5s ease;
+        z-index: 9;
+      }
+
+      .menu.active {
+        right: 0;
+      }
+
+      .menu a {
+        color: white;
+        padding: 15px 30px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .close-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 32px;
+        cursor: pointer;
+        z-index: 10;
+      }
+      
+    }
+
+    /* ===== Section d’accueil ===== */
+    .hero {
+      padding: 223px 20px;
+      text-align: center;
+      background-image: url(img3.png);
+      background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+      
+    }
+   
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: rgb(255, 255, 255);
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: white;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #6a11cb;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #2575fc;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      
+    
+    }
+    .products {
+  padding: 40px 20px;
+  background: #f8f8f8;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.products h3 {
+  font-size: 24px;
+  margin: 20px 0 10px 10px;
+  color: #333;
+}
+
+.product-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.product-card {
+  min-width: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contact-info {
+  padding: 60px 20px;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-box {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 119px 95px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-box p {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.contact-box a {
+  color: #6a11cb;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}

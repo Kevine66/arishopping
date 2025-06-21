@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ma Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <div class="logo">Ari’shopping</div>
+    <div class="menu" id="menu">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <a href="#">Accueil</a>
+      <a href="homme.html">Homme</a>
+      <a href="femme.html">Femme</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Page d'accueil -->
+   
+        <section class="hero">
+            <h1>Bienvenue chez Ari’shopping </h1>
+            <p>Découvrez nos produits pour homme et femme</p>
+            <a href="homme.html" class="btn"><i class="fa-solid fa-mars"></i> Voir Produits Homme</a>
+            <a href="femme.html" class="btn"> <i class="fa-solid fa-mars"></i> Voir Produits Femme</a>
+       </section>
+       
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 Ari’shopping | Créé par <a style="color: white; text-decoration: none;" href="https://kevine66.github.io/site_perso/">Kévine G.</a></p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    const closeBtn = document.getElementById('closeBtn');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  </script>
+
+</body>
+</html>

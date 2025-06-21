@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Ari’shopping</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <div class="logo">Ari’shopping</div>
+    <div class="menu" id="menu">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <a href="acceuil.html">Accueil</a>
+      <a href="homme.html">Homme</a>
+      <a href="femme.html">Femme</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Section de contact -->
+  <section class="contact-info">
+    <h2>Contactez-nous</h2>
+    <div class="contact-box">
+      <p><strong><i class="fa-solid fa-shop"></i> </strong> Ari’shopping</p>
+      <p><strong><i class="fa-brands fa-whatsapp"></i></strong> <a href="https://wa.me/229XXXXXXXXXX" target="_blank">+229 67 91 12 22</a></p>
+      <p><strong><i class="fa-solid fa-location-dot"></i></strong>  Agla stade pharmacie les pylônes</p>
+      <p><strong><i class="fa-brands fa-tiktok"></i></strong> <a href="https://www.tiktok.com/@arismith65" target="_blank">@arismith65</a></p>
+      <p><strong><i class="fa-brands fa-snapchat"></i></strong> <a href="https://www.snapchat.com/add/Ari smith" target="_blank">Ari smith</a></p>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 Ari’shopping | Créé par <a style="color: white; text-decoration: none;" href="https://kevine66.github.io/site_perso/">Kévine G.</a></p>
+  </footer>
+
+  <!-- Script menu responsive -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    const closeBtn = document.getElementById('closeBtn');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  </script>
+
+</body>
+</html>
